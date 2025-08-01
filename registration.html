@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+    <form action="/register" method="post">
+        <h1>Register</h1>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your name" ><br><br>
+
+        <label for="roll">Roll:</label>
+        <input type="number" id="roll" name="roll" required placeholder="Enter Roll " aria-placeholder="Enter Roll "><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <fieldset>
+            <legend>Gender :</legend>
+            <input type="radio" name="Gender" id="male" value="Male">Male</input>
+            <input type="radio" name="Gender" id="male" value="Male">Female</input>
+        </fieldset><br>
+        <label for="date">Date of Birth:</label>
+        <input type = "date" id = "date" name = "date" required>
+        <br><br>
+        <label for="color">Favorite Color:</label>
+        <input type = "color" id = "color" name = "color" value = "#000000">
+        <br><br>
+        <input type = "file" id = "file" name = "file" accept = ".jpg, .jpeg, .png">
+        <br><br>
+        <label for="feedback-type">Choose a feedback type:</label>
+        <select id="feedback-type" name="feedback-type" required>
+            <option value="">--Select an option--</option>
+            <option value="complaint">Complaint</option>
+            <option value="suggestion">Suggestion</option>
+            <option value="inquiry">Inquiry</option>
+            <option value="other">Other</option>
+        </select>
+        <br><br>
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the terms and conditions</label><br>
+        <br><br>
+
+        <button type="submit">Register</button>
+</body>
+</html>

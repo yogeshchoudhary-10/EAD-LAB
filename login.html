@@ -1,0 +1,80 @@
+<!DOCTYPE html><!-- what's this-->
+<html lang="en">
+<head>
+    
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0dede;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        
+        form {
+            max-width: 400px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 15px 1px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        
+        #password,#username{
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #0c0a0a;
+        }
+         
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Login Form</h1>
+    <form >       
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username"  placeholder="Enter your username"><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password"><br><br>
+
+        <input type="checkbox" id="remember-me" name="remember-me">
+        <label for="remember-me">Remember me</label><br><br>
+
+        <button type="submit">Login</button>    
+        <p>Don't have an account? <a href="registration.html">Register here</a></p>
+    </form>
+    <script>
+        // Optional: Add JavaScript for form validation or other interactivity
+        document.querySelector('form').addEventListener('submit', function(event) {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            if (!username || !password) {
+                alert('Please fill in all fields.');
+                
+        }});
+    </script>
+</body>
+</html> 
