@@ -1,0 +1,2 @@
+.card { border:1px solid #ddd; padding:8px; margin:6px; border-radius:4px; }
+.modal { position:fixed; inset:0; background:#fff; margin:auto; padding:10px; border:1px solid #aaa; width:200px; }
