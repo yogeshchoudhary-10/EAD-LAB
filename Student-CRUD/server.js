@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
 app.use(express.json());
-mongoose.connect('mongodb+srv://choudharyyogesh219_db_user:OcO3jWsKeMFrcMvy@cluster0.htwesqd.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
+mongoose.connect(#connection string mongodb://localhost:27017/students, {
 useNewUrlParser: true,
 useUnifiedTopology: true,
 });
